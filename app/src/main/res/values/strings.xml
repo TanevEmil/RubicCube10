@@ -21,4 +21,78 @@
     <string name="_20">20</string>
     <string name="_22">22</string>
     <string name="_24">24</string>
+
+    <string name="rgb000">rgb</string>
+    <string name="rgy000">rgy</string>
+    <string name="rmb000">rmb</string>
+    <string name="rmy000">rmy</string>
+    <string name="cgb000">cgb</string>
+    <string name="cgy000">cgy</string>
+    <string name="cmb000">cmb</string>
+    <string name="cmy000">cmy</string>
+
+    <string name="rgb001">rgB</string>
+    <string name="rgy001">rgY</string>
+    <string name="rmb001">rmB</string>
+    <string name="rmy001">rmY</string>
+    <string name="cgb001">cgB</string>
+    <string name="cgy001">cgY</string>
+    <string name="cmb001">cmB</string>
+    <string name="cmy001">cmY</string>
+
+    <string name="rgb010">rGb</string>
+    <string name="rgy010">rGy</string>
+    <string name="rmb010">rMb</string>
+    <string name="rmy010">rMy</string>
+    <string name="cgb010">cGb</string>
+    <string name="cgy010">cGy</string>
+    <string name="cmb010">cMb</string>
+    <string name="cmy010">cMy</string>
+
+    <string name="rgb011">rGB</string>
+    <string name="rgy011">rGY</string>
+    <string name="rmb011">rMB</string>
+    <string name="rmy011">rMY</string>
+    <string name="cgb011">cGB</string>
+    <string name="cgy011">cGY</string>
+    <string name="cmb011">cMB</string>
+    <string name="cmy011">cMY</string>
+
+    <string name="rgb100">Rgb</string>
+    <string name="rgy100">Rgy</string>
+    <string name="rmb100">Rmb</string>
+    <string name="rmy100">Rmy</string>
+    <string name="cgb100">Cgb</string>
+    <string name="cgy100">Cgy</string>
+    <string name="cmb100">Cmb</string>
+    <string name="cmy100">Cmy</string>
+
+    <string name="rgb101">RgB</string>
+    <string name="rgy101">RgY</string>
+    <string name="rmb101">RmB</string>
+    <string name="rmy101">RmY</string>
+    <string name="cgb101">CgY</string>
+    <string name="cgy101">CgY</string>
+    <string name="cmb101">CmY</string>
+    <string name="cmy101">CmY</string>
+
+    <string name="rgb110">RGb</string>
+    <string name="rgy110">RGy</string>
+    <string name="rmb110">RMb</string>
+    <string name="rmy110">RMy</string>
+    <string name="cgb110">CGb</string>
+    <string name="cgy110">CGy</string>
+    <string name="cmb110">CMb</string>
+    <string name="cmy110">CMy</string>
+
+    <string name="rgb111">RGB</string>
+    <string name="rgy111">RGY</string>
+    <string name="rmb111">RMB</string>
+    <string name="rmy111">RMY</string>
+    <string name="cgb111">CGB</string>
+    <string name="cgy111">CGY</string>
+    <string name="cmb111">CMB</string>
+    <string name="cmy111">CMY</string>
+
+
 </resources>
