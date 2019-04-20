@@ -21,7 +21,7 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/rgb010"
+            android:text="@string/rgb100"
             android:textAlignment="center"
             android:layout_weight="1"
             android:gravity="center" />
@@ -54,7 +54,7 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/cmy010"
+            android:text="@string/cmy100"
             android:textAlignment="center"
             android:layout_weight="1"
             android:gravity="center" />
@@ -87,7 +87,7 @@
             android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/rgb010"
+            android:text="@string/rgb100"
             android:textAlignment="center"
             android:layout_weight="1"
             android:gravity="center"/>
