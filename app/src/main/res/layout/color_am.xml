@@ -19,14 +19,14 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/red"
+            android:background="@color/cyan"
             android:layout_weight="1"/>
 
         <ImageView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/red"
+            android:background="@color/cyan"
             android:layout_weight="1" />
     </TableRow>
 
@@ -39,7 +39,7 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/green"
+            android:background="@color/magenta"
             android:layout_weight="1" />
 
         <ImageView
@@ -73,14 +73,14 @@
             android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/yellow"
+            android:background="@color/blue"
             android:layout_weight="1"/>
 
         <ImageView
             android:id="@+id/textView9"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/yellow"
+            android:background="@color/blue"
             android:layout_weight="1"/>
     </TableRow>
 </TableLayout>
