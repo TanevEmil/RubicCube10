@@ -9,7 +9,7 @@
                 android:bottom="4dp"/>
 
             <stroke android:width="4dp"
-                android:color="@color/white" />
+                android:color="@color/blue" />
 
         </shape>
     </item>
@@ -22,7 +22,7 @@
                 android:bottom="4dp"/>
 
             <stroke android:width="4dp"
-                android:color="@color/blue" />
+                android:color="@color/white" />
 
         </shape>
     </item>
