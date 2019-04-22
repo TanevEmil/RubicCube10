@@ -2,7 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/button_border10">
+    android:background="@drawable/button_border6">
 
     <include layout="@layout/color6" />
     <include layout="@layout/text6" />
