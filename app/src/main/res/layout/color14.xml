@@ -9,21 +9,21 @@
         android:layout_weight="1">
 
         <ImageView
-            android:id="@+id/textView"
+            android:id="@+id/imageView14_1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/cyan"
             android:layout_weight="1" />
 
         <ImageView
-            android:id="@+id/textView2"
+            android:id="@+id/imageView14_2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/red"
             android:layout_weight="1"/>
 
         <ImageView
-            android:id="@+id/textView3"
+            android:id="@+id/imageView14_3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/red"
@@ -36,21 +36,21 @@
         android:layout_weight="1">
 
         <ImageView
-            android:id="@+id/textView4"
+            android:id="@+id/imageView14_4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/green"
             android:layout_weight="1" />
 
         <ImageView
-            android:id="@+id/textView6"
+            android:id="@+id/imageView14_5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/magenta"
             android:layout_weight="1" />
 
         <ImageView
-            android:id="@+id/textView5"
+            android:id="@+id/imageView14_6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/magenta"
@@ -63,21 +63,21 @@
         android:layout_weight="1">
 
         <ImageView
-            android:id="@+id/textView7"
+            android:id="@+id/imageView14_7"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/yellow"
             android:layout_weight="1" />
 
         <ImageView
-            android:id="@+id/textView8"
+            android:id="@+id/imageView14_8"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/blue"
             android:layout_weight="1"/>
 
         <ImageView
-            android:id="@+id/textView9"
+            android:id="@+id/imageView14_9"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/blue"
