@@ -9,7 +9,7 @@
         android:layout_weight="1">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textViewPm_1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/rgb100"
@@ -19,7 +19,7 @@
             android:gravity="center" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textViewPm_2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/cmy000"
@@ -29,7 +29,7 @@
             android:gravity="center" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textViewPm_3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/cmy000"
@@ -45,7 +45,7 @@
         android:layout_weight="1">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textViewPm_4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/cmy100"
@@ -55,7 +55,7 @@
             android:gravity="center" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/textViewPm_5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/rgb000"
@@ -65,7 +65,7 @@
             android:gravity="center" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textViewPm_6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/rgb000"
@@ -81,7 +81,7 @@
         android:layout_weight="1">
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/textViewPm_7"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/cmy100"
@@ -91,7 +91,7 @@
             android:gravity="center" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/textViewPm_8"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/rgb000"
@@ -101,7 +101,7 @@
             android:gravity="center"/>
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/textViewPm_9"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/rgb000"

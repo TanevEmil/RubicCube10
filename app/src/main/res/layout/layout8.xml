@@ -8,7 +8,7 @@
     <include layout="@layout/text8" />
 
     <Button
-        android:id="@+id/button21"
+        android:id="@+id/button8"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
