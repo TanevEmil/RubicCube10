@@ -5,11 +5,19 @@
     <color name="colorAccent">#D81B60</color>
 
     <color name="white">#FFFFFF</color>
-    <color name="yellow">#FFFF00</color>
-    <color name="magenta">#FF00FF</color>
-    <color name="cyan">#00FFFF</color>
-    <color name="red">#FF0000</color>
-    <color name="green">#00FF00</color>
-    <color name="blue">#0000FF</color>
+    <color name="yellow">#FFFFFF</color>
+    <color name="magenta">#FFFFFF</color>
+    <color name="cyan">#FFFFFF</color>
+    <color name="red">#000000</color>
+    <color name="green">#000000</color>
+    <color name="blue">#000000</color>
     <color name="black">#000000</color>
+
+    <color name="t_white">#FFFFFF</color>
+    <color name="t_black">#000000</color>
+
+    <color name="c_red">#FF0000</color>
+    <color name="c_green">#00FF00</color>
+    <color name="c_blue">#0000FF</color>
+
 </resources>
