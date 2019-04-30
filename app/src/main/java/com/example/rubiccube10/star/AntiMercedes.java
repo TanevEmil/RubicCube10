@@ -13,92 +13,92 @@ public class AntiMercedes extends Star{
         super(mercedes.getCircle(), mercedes.getOrigin(), mercedes.getOutside());
     }
     @Override
-    public Star clickTop(PipesPlusColumn pipesPlusColumn) {
-        Face face = origin.getFaceBack();
-        origin.setFaceBack(circle.getFaceTop());
-        circle.setFaceTop(origin.getFaceFront());
-        origin.setFaceFront(outside.getFaceBottom());
-        outside.setFaceBottom(face);
+    public Star clickTop(PipesPlusColumn ppc) {
+        boolean[] aPPC = origin.getFaceBack().getPPC(ppc);
+        origin.setFaceBack(ppc, circle.getFaceTop().getPPC(ppc));
+        circle.setFaceTop(ppc, origin.getFaceFront().getPPC(ppc));
+        origin.setFaceFront(ppc, outside.getFaceBottom().getPPC(ppc));
+        outside.setFaceBottom(ppc, aPPC);
 
-        face = circle.getFaceBottomLeft();
-        circle.setFaceBottomLeft(outside.getFaceTopLeft());
-        outside.setFaceTopLeft(face);
+        aPPC = circle.getFaceBottomLeft().getPPC(ppc);
+        circle.setFaceBottomLeft(ppc, outside.getFaceTopLeft().getPPC(ppc));
+        outside.setFaceTopLeft(ppc, aPPC);
 
-        face = circle.getFaceBottomRight();
-        circle.setFaceBottomRight(outside.getFaceTopRight());
-        outside.setFaceTopRight(face);
-
-        print();
-
-        return new Mercedes(this);
-    }
-    @Override
-    public Star clickBottomLeft(PipesPlusColumn pipesPlusColumn) {
-        Face face = origin.getFaceBack();
-        origin.setFaceBack(circle.getFaceBottomLeft());
-        circle.setFaceBottomLeft(origin.getFaceFront());
-        origin.setFaceFront(outside.getFaceTopRight());
-        outside.setFaceTopRight(face);
-
-        face = circle.getFaceTop();
-        circle.setFaceTop(outside.getFaceTopLeft());
-        outside.setFaceTopLeft(face);
-
-        face = outside.getFaceBottom();
-        outside.setFaceBottom(circle.getFaceBottomRight());
-        circle.setFaceBottomRight(face);
+        aPPC = circle.getFaceBottomRight().getPPC(ppc);
+        circle.setFaceBottomRight(ppc, outside.getFaceTopRight().getPPC(ppc));
+        outside.setFaceTopRight(ppc, aPPC);
 
         print();
 
         return new Mercedes(this);
     }
     @Override
-    public Star clickBottomRight(PipesPlusColumn pipesPlusColumn) {
-        Face face = origin.getFaceBack();
-        origin.setFaceBack(circle.getFaceBottomRight());
-        circle.setFaceBottomRight(origin.getFaceFront());
-        origin.setFaceFront(outside.getFaceTopLeft());
-        outside.setFaceTopLeft(face);
+    public Star clickBottomLeft(PipesPlusColumn ppc) {
+        boolean[] aPPC = origin.getFaceBack().getPPC(ppc);
+        origin.setFaceBack(ppc, circle.getFaceBottomLeft().getPPC(ppc));
+        circle.setFaceBottomLeft(ppc, origin.getFaceFront().getPPC(ppc));
+        origin.setFaceFront(ppc, outside.getFaceTopRight().getPPC(ppc));
+        outside.setFaceTopRight(ppc, aPPC);
 
-        face = circle.getFaceTop();
-        circle.setFaceTop(outside.getFaceTopRight());
-        outside.setFaceTopRight(face);
+        aPPC = circle.getFaceTop().getPPC(ppc);
+        circle.setFaceTop(ppc, outside.getFaceTopLeft().getPPC(ppc));
+        outside.setFaceTopLeft(ppc, aPPC);
 
-        face = outside.getFaceBottom();
-        outside.setFaceBottom(circle.getFaceBottomLeft());
-        circle.setFaceBottomLeft(face);
+        aPPC = outside.getFaceBottom().getPPC(ppc);
+        outside.setFaceBottom(ppc, circle.getFaceBottomRight().getPPC(ppc));
+        circle.setFaceBottomRight(ppc, aPPC);
 
         print();
 
         return new Mercedes(this);
     }
     @Override
-    public Star clickTopLeft(PipesPlusColumn pipesPlusColumn) {
-        Face face = origin.getFaceBack();
-        origin.setFaceBack(outside.getFaceTopLeft());
-        outside.setFaceTopLeft(origin.getFaceFront());
-        origin.setFaceFront(circle.getFaceBottomRight());
-        circle.setFaceBottomRight(face);
+    public Star clickBottomRight(PipesPlusColumn ppc) {
+        boolean[] aPPC = origin.getFaceBack().getPPC(ppc);
+        origin.setFaceBack(ppc, circle.getFaceBottomRight().getPPC(ppc));
+        circle.setFaceBottomRight(ppc, origin.getFaceFront().getPPC(ppc));
+        origin.setFaceFront(ppc, outside.getFaceTopLeft().getPPC(ppc));
+        outside.setFaceTopLeft(ppc, aPPC);
+
+        aPPC = circle.getFaceTop().getPPC(ppc);
+        circle.setFaceTop(ppc, outside.getFaceTopRight().getPPC(ppc));
+        outside.setFaceTopRight(ppc, aPPC);
+
+        aPPC = outside.getFaceBottom().getPPC(ppc);
+        outside.setFaceBottom(ppc, circle.getFaceBottomLeft().getPPC(ppc));
+        circle.setFaceBottomLeft(ppc, aPPC);
+
+        print();
+
+        return new Mercedes(this);
+    }
+    @Override
+    public Star clickTopLeft(PipesPlusColumn ppc) {
+        boolean[] aPPC = origin.getFaceBack().getPPC(ppc);
+        origin.setFaceBack(ppc, outside.getFaceTopLeft().getPPC(ppc));
+        outside.setFaceTopLeft(ppc, origin.getFaceFront().getPPC(ppc));
+        origin.setFaceFront(ppc, circle.getFaceBottomRight().getPPC(ppc));
+        circle.setFaceBottomRight(ppc, aPPC);
         print();
         return new Mercedes(this);
     }
     @Override
-    public Star clickTopRight(PipesPlusColumn pipesPlusColumn) {
-        Face face = origin.getFaceBack();
-        origin.setFaceBack(outside.getFaceTopRight());
-        outside.setFaceTopRight(origin.getFaceFront());
-        origin.setFaceFront(circle.getFaceBottomLeft());
-        circle.setFaceBottomLeft(face);
+    public Star clickTopRight(PipesPlusColumn ppc) {
+        boolean[] aPPC = origin.getFaceBack().getPPC(ppc);
+        origin.setFaceBack(ppc, outside.getFaceTopRight().getPPC(ppc));
+        outside.setFaceTopRight(ppc, origin.getFaceFront().getPPC(ppc));
+        origin.setFaceFront(ppc, circle.getFaceBottomLeft().getPPC(ppc));
+        circle.setFaceBottomLeft(ppc, aPPC);
         print();
         return new Mercedes(this);
     }
     @Override
-    public Star clickBottom(PipesPlusColumn pipesPlusColumn) {
-        Face face = origin.getFaceBack();
-        origin.setFaceBack(outside.getFaceBottom());
-        outside.setFaceBottom(origin.getFaceFront());
-        origin.setFaceFront(circle.getFaceTop());
-        circle.setFaceTop(face);
+    public Star clickBottom(PipesPlusColumn ppc) {
+        boolean[] aPPC = origin.getFaceBack().getPPC(ppc);
+        origin.setFaceBack(ppc, outside.getFaceBottom().getPPC(ppc));
+        outside.setFaceBottom(ppc, origin.getFaceFront().getPPC(ppc));
+        origin.setFaceFront(ppc, circle.getFaceTop().getPPC(ppc));
+        circle.setFaceTop(ppc, aPPC);
 
         print();
         return new Mercedes(this);

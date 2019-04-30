@@ -11,6 +11,12 @@
     android:layout_weight="1">
 
     <include
+        layout="@layout/layout22"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <include
         layout="@layout/layout24"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -18,12 +24,6 @@
 
     <include
         layout="@layout/layout14"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1" />
-
-    <include
-        layout="@layout/layout16"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1" />
@@ -199,12 +199,6 @@
 
 
     <include
-        layout="@layout/layout22"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1" />
-
-    <include
         layout="@layout/layout20"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -212,6 +206,12 @@
 
     <include
         layout="@layout/layout18"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <include
+        layout="@layout/layout16"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1" />

@@ -12,18 +12,18 @@
             android:id="@+id/textView22_1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/cmy100"
-            android:textColor="@color/t_white"
+            android:text="@string/rgb100"
+            android:textColor="@color/t_black"
             android:textAlignment="center"
             android:layout_weight="1"
             android:gravity="center" />
--
+
         <TextView
             android:id="@+id/textView22_2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/rgb000"
-            android:textColor="@color/t_white"
+            android:text="@string/cmy000"
+            android:textColor="@color/t_black"
             android:textAlignment="center"
             android:layout_weight="1"
             android:gravity="center" />
@@ -32,8 +32,8 @@
             android:id="@+id/textView22_3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/rgb000"
-            android:textColor="@color/t_white"
+            android:text="@string/cmy000"
+            android:textColor="@color/t_black"
             android:textAlignment="center"
             android:layout_weight="1"
             android:gravity="center" />
@@ -48,8 +48,8 @@
             android:id="@+id/textView22_4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/cmy100"
-            android:textColor="@color/t_white"
+            android:text="@string/rgb100"
+            android:textColor="@color/t_black"
             android:textAlignment="center"
             android:layout_weight="1"
             android:gravity="center" />
@@ -58,8 +58,8 @@
             android:id="@+id/textView22_5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/rgb000"
-            android:textColor="@color/t_white"
+            android:text="@string/cmy000"
+            android:textColor="@color/t_black"
             android:textAlignment="center"
             android:layout_weight="1"
             android:gravity="center" />
@@ -68,8 +68,8 @@
             android:id="@+id/textView22_6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/rgb000"
-            android:textColor="@color/t_white"
+            android:text="@string/cmy000"
+            android:textColor="@color/t_black"
             android:textAlignment="center"
             android:layout_weight="1"
             android:gravity="center" />

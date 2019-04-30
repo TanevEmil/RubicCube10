@@ -2,7 +2,6 @@ package com.example.rubiccube10.mercedes;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-
 import com.example.rubiccube10.DTO;
 import com.example.rubiccube10.PipesPlusColumn;
 
@@ -33,13 +32,12 @@ public class Face {
         amGreen = b4; oddGreen = b5; pmGreen = b6;
         amBlue = b7; oddBlue = b8; pmBlue = b9;
     }
-
-    public Face clone() {
-        return new Face(amRed, oddRed, pmRed, amGreen, oddGreen, pmGreen, amBlue, oddBlue, pmBlue);
-    }
     public Face invert() {
         return new Face(!amRed, !oddRed, !pmRed, !amGreen, !oddGreen, !pmGreen, !amBlue, !oddBlue, !pmBlue);
     }
+//    public Face clone() {
+//        return new Face(amRed, oddRed, pmRed, amGreen, oddGreen, pmGreen, amBlue, oddBlue, pmBlue);
+//    }
     public void print(DTO dto){
         dto.printV_1(amRed);
         dto.printV_4(amGreen);
@@ -51,67 +49,20 @@ public class Face {
         dto.printV_6(pmGreen);
         dto.printV_9(pmBlue);
     }
-
-//    public void changeColumn(PipesPlusColumn pipesPlusColumn, Face face){
-        /*switch (pipesPlusColumn) {
-            case FIRST:
-                this.amRed = face.amRed;
-                this.amGreen = face.amGreen;
-                this.amBlue = face.amBlue;
-            case SECOND:
-                this.oddRed = face.oddRed;
-                this.oddGreen = face.oddGreen;
-                this.oddBlue = face.oddBlue;
-            case THIRD:
-                this.pmRed = face.pmRed;
-                this.pmGreen = face.pmGreen;
-                this.pmBlue = face.pmBlue;
-        }*/
-//        this.amRed = face.amRed;
-//        this.oddRed = face.oddRed;
-//        this.pmRed = face.pmRed;
-//        this.amGreen = face.amGreen;
-//        this.oddGreen = face.oddGreen;
-//        this.pmGreen = face.pmGreen;
-//        this.amBlue = face.amBlue;
-//        this.oddBlue = face.oddBlue;
-//        this.pmBlue = face.pmBlue;
-//    }
-//
-//
-//    public boolean isAmRed() {
-//        return amRed;
-//    }
-//
-//    public boolean isOddRed() {
-//        return oddRed;
-//    }
-//
-//    public boolean isPmRed() {
-//        return pmRed;
-//    }
-//
-//    public boolean isAmGreen() {
-//        return amGreen;
-//    }
-//
-//    public boolean isOddGreen() {
-//        return oddGreen;
-//    }
-//
-//    public boolean isPmGreen() {
-//        return pmGreen;
-//    }
-//
-//    public boolean isAmBlue() {
-//        return amBlue;
-//    }
-//
-//    public boolean isOddBlue() {
-//        return oddBlue;
-//    }
-//
-//    public boolean isPmBlue() {
-//        return pmBlue;
-//    }
+    public void setPPC(PipesPlusColumn pipesPlusColumn, boolean[] a) {
+        switch (pipesPlusColumn) {
+            case FIRST: amRed = a[0]; amGreen = a[1]; amBlue = a[2]; break;
+            case SECOND: oddRed = a[0]; oddGreen = a[1]; oddBlue = a[2]; break;
+            case THIRD: pmRed = a[0]; pmGreen = a[1]; pmBlue = a[2]; break;
+        }
+    }
+    public boolean[] getPPC(PipesPlusColumn pipesPlusColumn) {
+        boolean[] a = {false, false, false};
+        switch (pipesPlusColumn) {
+            case FIRST: a[0] = amRed; a[1] = amGreen; a[2] = amBlue; break;
+            case SECOND: a[0] = oddRed; a[1] = oddGreen; a[2] = oddBlue; break;
+            case THIRD: a[0] = pmRed; a[1] = pmGreen; a[2] = pmBlue; break;
+        }
+        return a;
+    }
 }

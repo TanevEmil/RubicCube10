@@ -46,12 +46,12 @@ public abstract class Star {
             this.outside = outside;
         }
 
-        public abstract Star clickTop(PipesPlusColumn pipesPlusColumn);
-        public abstract Star clickBottomLeft(PipesPlusColumn pipesPlusColumn);
-        public abstract Star clickBottomRight(PipesPlusColumn pipesPlusColumn);
-        public abstract Star clickTopLeft(PipesPlusColumn pipesPlusColumn);
-        public abstract Star clickTopRight(PipesPlusColumn pipesPlusColumn);
-        public abstract Star clickBottom(PipesPlusColumn pipesPlusColumn);
+        public abstract Star clickTop(PipesPlusColumn ppc);
+        public abstract Star clickBottomLeft(PipesPlusColumn ppc);
+        public abstract Star clickBottomRight(PipesPlusColumn ppc);
+        public abstract Star clickTopLeft(PipesPlusColumn ppc);
+        public abstract Star clickTopRight(PipesPlusColumn ppc);
+        public abstract Star clickBottom(PipesPlusColumn ppc);
 
         public abstract Origin getOrigin();
         public abstract Circle getCircle();

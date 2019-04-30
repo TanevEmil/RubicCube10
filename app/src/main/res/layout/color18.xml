@@ -12,21 +12,21 @@
             android:id="@+id/imageView18_1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/red"
+            android:background="@color/cyan"
             android:layout_weight="1" />
 
         <ImageView
             android:id="@+id/imageView18_2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/red"
+            android:background="@color/cyan"
             android:layout_weight="1"/>
 
         <ImageView
             android:id="@+id/imageView18_3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/red"
+            android:background="@color/cyan"
             android:layout_weight="1" />
     </TableRow>
 

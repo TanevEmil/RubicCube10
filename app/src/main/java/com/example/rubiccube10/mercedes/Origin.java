@@ -2,6 +2,7 @@ package com.example.rubiccube10.mercedes;
 
 
 import com.example.rubiccube10.DTO;
+import com.example.rubiccube10.PipesPlusColumn;
 
 public class Origin {
     private Face faceFront;
@@ -12,43 +13,32 @@ public class Origin {
         this.faceFront = new Face(dto);
         this.faceBack = this.faceFront.invert();
     }
-    public Origin(Origin origin) {
-        this.dto = origin.dto;
-        this.faceFront = origin.faceBack.clone();
-        this.faceBack = origin.faceFront.clone();
-    }
 
     public Face getFaceFront() {
         return faceFront;
     }
 
-    public void setFaceFront(Face faceFront) {
-        this.faceFront = faceFront;
+    public void setFaceFront(PipesPlusColumn ppc, boolean[] aFront) {
+        this.faceFront.setPPC(ppc, aFront);
     }
 
     public Face getFaceBack() {
         return faceBack;
     }
 
-    public void setFaceBack(Face faceBack) {
-        this.faceBack = faceBack;
+    public void setFaceBack(PipesPlusColumn ppc, boolean[] aBack) {
+        this.faceBack.setPPC(ppc, aBack);
     }
 
-    public DTO getDto() {
-        return dto;
-    }
-
-    public void setDto(DTO dto) {
-        this.dto = dto;
-    }
+//    public DTO getDto() {
+//        return dto;
+//    }
+//
+//    public void setDto(DTO dto) {
+//        this.dto = dto;
+//    }
 
     public void print(){
         faceFront.print(dto);
     }
-    //    }
-//        this.back = origin.back;
-//        this.front = origin.front;
-//        origin.back.changeColumn(pipesPlusColumn, antiOorigin.back);
-//        origin.front.changeColumn(pipesPlusColumn, antiOorigin.front);
-//    public Origin(Origin origin, Origin antiOorigin, PipesPlusColumn pipesPlusColumn) {
 }
