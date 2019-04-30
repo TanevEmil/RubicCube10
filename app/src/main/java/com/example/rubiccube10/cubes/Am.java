@@ -49,6 +49,6 @@ public class Am {
     }
     public PipesPlusColumn clickFront(){
         amFront.clickFront();
-        return PipesPlusColumn.FIRST;
+        return PipesPlusColumn.THIRD;
     }
 }

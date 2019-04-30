@@ -50,6 +50,6 @@ public class Pm {
     }
     public PipesPlusColumn clickFront(){
         pmFront.clickFront();
-        return PipesPlusColumn.THIRD;
+        return PipesPlusColumn.FIRST;
     }
 }
