@@ -27,10 +27,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         final Paker paker = new Paker(this);
 
-        column = Column.FIRST;
         final Pm pm = new Pm(paker);
         final Odd odd = new Odd(paker);
         final Am am = new Am(paker);
+        column = odd.clickFront();
 
         final Button button14 = findViewById(R.id.button14);
         button14.setOnClickListener(new View.OnClickListener() {
@@ -153,7 +153,6 @@ public class MainActivity extends AppCompatActivity {
         button_odd.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 column = odd.clickFront();
-
             }
         });
         final Button button_pm = findViewById(R.id.button_pm);
