@@ -1,9 +1,9 @@
 package com.example.rubiccube10.star;
 
-import com.example.rubiccube10.DTO;
-import com.example.rubiccube10.PipesPlusColumn;
+import com.example.rubiccube10.Pair;
+import com.example.rubiccube10.Column;
+import com.example.rubiccube10.Row;
 import com.example.rubiccube10.mercedes.Circle;
-import com.example.rubiccube10.mercedes.Face;
 import com.example.rubiccube10.mercedes.Origin;
 import com.example.rubiccube10.mercedes.Outside;
 
@@ -13,32 +13,32 @@ public abstract class Star {
     protected Circle circle;
     protected Outside outside;
 
-    protected DTO dtoFront;
+    protected Pair pairFront;
 
-    protected DTO dtoTop;
-    protected DTO dtoBottomLeft;
-    protected DTO dtoBottomRight;
+    protected Pair pairTop;
+    protected Pair pairBottomLeft;
+    protected Pair pairBottomRight;
 
-    protected DTO dtoTopLeft;
-    protected DTO dtoTopRight;
-    protected DTO dtoBottom;
+    protected Pair pairTopLeft;
+    protected Pair pairTopRight;
+    protected Pair pairBottom;
 
-    public Star(DTO dtoFront,
-                    DTO dtoTop, DTO dtoBottomLeft, DTO dtoBottomRight,
-                    DTO dtoTopLeft, DTO dtoTopRight, DTO dtoBottom) {
-            this.dtoFront = dtoFront;
+    public Star(Pair pairFront,
+                    Pair pairTop, Pair pairBottomLeft, Pair pairBottomRight,
+                    Pair pairTopLeft, Pair pairTopRight, Pair pairBottom) {
+            this.pairFront = pairFront;
 
-            this.dtoTop = dtoTop;
-            this.dtoBottomLeft = dtoBottomLeft;
-            this.dtoBottomRight = dtoBottomRight;
+            this.pairTop = pairTop;
+            this.pairBottomLeft = pairBottomLeft;
+            this.pairBottomRight = pairBottomRight;
 
-            this.dtoTopLeft = dtoTopLeft;
-            this.dtoTopRight = dtoTopRight;
-            this.dtoBottom = dtoBottom;
+            this.pairTopLeft = pairTopLeft;
+            this.pairTopRight = pairTopRight;
+            this.pairBottom = pairBottom;
 
-            origin = new Origin(dtoFront);
-            circle = new Circle(dtoTop, dtoBottomLeft, dtoBottomRight);
-            outside = new Outside(dtoTopLeft, dtoTopRight, dtoBottom);
+            origin = new Origin(pairFront);
+            circle = new Circle(pairTop, pairBottomLeft, pairBottomRight);
+            outside = new Outside(pairTopLeft, pairTopRight, pairBottom);
         }
         protected Star(Circle circle, Origin origin, Outside outside) {
             this.circle = circle;
@@ -46,20 +46,14 @@ public abstract class Star {
             this.outside = outside;
         }
 
-        public abstract Star clickTop(PipesPlusColumn ppc);
-        public abstract Star clickBottomLeft(PipesPlusColumn ppc);
-        public abstract Star clickBottomRight(PipesPlusColumn ppc);
-        public abstract Star clickTopLeft(PipesPlusColumn ppc);
-        public abstract Star clickTopRight(PipesPlusColumn ppc);
-        public abstract Star clickBottom(PipesPlusColumn ppc);
+        public abstract Star clickTop();
+        public abstract Star clickBottomLeft();
+        public abstract Star clickBottomRight();
+        public abstract Star clickTopLeft();
+        public abstract Star clickTopRight();
+        public abstract Star clickBottom();
 
         public abstract Origin getOrigin();
         public abstract Circle getCircle();
         public abstract Outside getOutside();
-
-        protected void print() {
-            origin.print();
-            circle.print();
-            outside.print();
-        }
 }

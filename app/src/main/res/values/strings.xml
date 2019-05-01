@@ -25,13 +25,13 @@
     <string name="rgb000"></string>
     <string name="cmy000"></string>
 
-    <string name="rgb001">&gt;</string>
-    <string name="cmy001">&gt;</string>
+    <string name="rgb001">+</string>
+    <string name="cmy001">+</string>
 
-    <string name="rgb010">|</string>
-    <string name="cmy010">|</string>
+    <string name="rgb010">+</string>
+    <string name="cmy010">+</string>
 
-    <string name="rgb100">&lt;</string>
-    <string name="cmy100">&lt;</string>
+    <string name="rgb100">+</string>
+    <string name="cmy100">+</string>
 
 </resources>

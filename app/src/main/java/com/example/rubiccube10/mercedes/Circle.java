@@ -1,54 +1,41 @@
 package com.example.rubiccube10.mercedes;
 
-import com.example.rubiccube10.DTO;
-import com.example.rubiccube10.PipesPlusColumn;
+import com.example.rubiccube10.Pair;
+import com.example.rubiccube10.Column;
+import com.example.rubiccube10.Row;
 
 public class Circle {
-    private Face faceTop;
-    private Face faceBottomLeft;
-    private Face faceBottomRight;
+    private Pair pairTop;
+    private Pair pairBottomLeft;
+    private Pair pairBottomRight;
 
-    private DTO dtoTop;
-    private DTO dtoBottomLeft;
-    private DTO dtoBottomRight;
-
-    public Circle(DTO dtoTop, DTO dtoBottomLeft, DTO dtoBottomRight) {
-        this.dtoTop = dtoTop;
-        this.dtoBottomLeft = dtoBottomLeft;
-        this.dtoBottomRight = dtoBottomRight;
-
-        this.faceTop = new Face(dtoTop);
-        this.faceBottomLeft = new Face(dtoBottomLeft);
-        this.faceBottomRight = new Face(dtoBottomRight);
+    public Circle(Pair pairTop, Pair pairBottomLeft, Pair pairBottomRight) {
+        this.pairTop = pairTop;
+        this.pairBottomLeft = pairBottomLeft;
+        this.pairBottomRight = pairBottomRight;
     }
 
-    public Face getFaceTop() {
-        return faceTop;
+    public int getPairTop() {
+        return pairTop.getColor();
     }
 
-    public void setFaceTop(PipesPlusColumn ppc, boolean[] aTop) {
-        this.faceTop.setPPC(ppc, aTop);
+    public void setPairTop(int color) {
+        this.pairTop.setColor(color);
     }
 
-    public Face getFaceBottomLeft() {
-        return faceBottomLeft;
+    public int getPairBottomLeft() {
+        return pairBottomLeft.getColor();
     }
 
-    public void setFaceBottomLeft(PipesPlusColumn ppc, boolean[] aBottomLeft) {
-        this.faceBottomLeft.setPPC(ppc, aBottomLeft);
+    public void setPairBottomLeft(int color) {
+        this.pairBottomLeft.setColor(color);
     }
 
-    public Face getFaceBottomRight() {
-        return faceBottomRight;
+    public int getPairBottomRight() {
+        return pairBottomRight.getColor();
     }
 
-    public void setFaceBottomRight(PipesPlusColumn ppc, boolean[] aBottomRight) {
-        this.faceBottomRight.setPPC(ppc, aBottomRight);
-    }
-
-    public void print() {
-        faceTop.print(dtoTop);
-        faceBottomLeft.print(dtoBottomLeft);
-        faceBottomRight.print(dtoBottomRight);
+    public void setPairBottomRight(int color) {
+        this.pairBottomRight.setColor(color);
     }
 }

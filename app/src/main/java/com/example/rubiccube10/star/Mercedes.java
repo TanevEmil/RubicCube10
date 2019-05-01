@@ -1,107 +1,98 @@
 package com.example.rubiccube10.star;
 
-import com.example.rubiccube10.DTO;
-import com.example.rubiccube10.PipesPlusColumn;
+import com.example.rubiccube10.Pair;
+import com.example.rubiccube10.Column;
+import com.example.rubiccube10.Row;
 import com.example.rubiccube10.mercedes.Circle;
-import com.example.rubiccube10.mercedes.Face;
 import com.example.rubiccube10.mercedes.Origin;
 import com.example.rubiccube10.mercedes.Outside;
 
 public class Mercedes extends Star{
 
-    public Mercedes(DTO dtoFront,
-                    DTO dtoTop, DTO dtoBottomLeft, DTO dtoBottomRight,
-                    DTO dtoTopLeft, DTO dtoTopRight, DTO dtoBottom) {
-        super(dtoFront, dtoTop, dtoBottomLeft, dtoBottomRight, dtoTopLeft, dtoTopRight, dtoBottom);
+    public Mercedes(Pair pairFront,
+                    Pair pairTop, Pair pairBottomLeft, Pair pairBottomRight,
+                    Pair pairTopLeft, Pair pairTopRight, Pair pairBottom) {
+        super(pairFront, pairTop, pairBottomLeft, pairBottomRight, pairTopLeft, pairTopRight, pairBottom);
     }
     public Mercedes(AntiMercedes antiMercedes) {
         super(antiMercedes.getCircle(), antiMercedes.getOrigin(), antiMercedes.getOutside());
     }
     @Override
-    public Star clickTop(PipesPlusColumn ppc) {
-        boolean[] aPPC = origin.getFaceBack().getPPC(ppc);
-        origin.setFaceBack(ppc, circle.getFaceTop().getPPC(ppc));
-        circle.setFaceTop(ppc, origin.getFaceFront().getPPC(ppc));
-        origin.setFaceFront(ppc, outside.getFaceBottom().getPPC(ppc));
-        outside.setFaceBottom(ppc, aPPC);
-        print();
+    public Star clickTop() {
+        int color = origin.getPairBack();
+        circle.setPairTop(origin.getPairFront());
+        origin.setPairFront(outside.getPairBottom());
+        outside.setPairBottom(color);
+        
         return new AntiMercedes(this);
     }
     @Override
-    public Star clickBottomLeft(PipesPlusColumn ppc) {
-        boolean[] aPPC = origin.getFaceBack().getPPC(ppc);
-        origin.setFaceBack(ppc, circle.getFaceBottomLeft().getPPC(ppc));
-        circle.setFaceBottomLeft(ppc, origin.getFaceFront().getPPC(ppc));
-        origin.setFaceFront(ppc, outside.getFaceTopRight().getPPC(ppc));
-        outside.setFaceTopRight(ppc, aPPC);
-        print();
+    public Star clickBottomLeft() {
+        int color = origin.getPairBack();
+        circle.setPairBottomLeft(origin.getPairFront());
+        origin.setPairFront(outside.getPairTopRight());
+        outside.setPairTopRight(color);
+        
         return new AntiMercedes(this);
     }
     @Override
-    public Star clickBottomRight(PipesPlusColumn ppc) {
-        boolean[] aPPC = origin.getFaceBack().getPPC(ppc);
-        origin.setFaceBack(ppc, circle.getFaceBottomRight().getPPC(ppc));
-        circle.setFaceBottomRight(ppc, origin.getFaceFront().getPPC(ppc));
-        origin.setFaceFront(ppc, outside.getFaceTopLeft().getPPC(ppc));
-        outside.setFaceTopLeft(ppc, aPPC);
-        print();
+    public Star clickBottomRight() {
+        int color = origin.getPairBack();
+        circle.setPairBottomRight(origin.getPairFront());
+        origin.setPairFront(outside.getPairTopLeft());
+        outside.setPairTopLeft(color);
+        
         return new AntiMercedes(this);
     }
     @Override
-    public Star clickTopLeft(PipesPlusColumn ppc) {
-        boolean[] aPPC = origin.getFaceBack().getPPC(ppc);
-        origin.setFaceBack(ppc, outside.getFaceTopLeft().getPPC(ppc));
-        outside.setFaceTopLeft(ppc, origin.getFaceFront().getPPC(ppc));
-        origin.setFaceFront(ppc, circle.getFaceBottomRight().getPPC(ppc));
-        circle.setFaceBottomRight(ppc, aPPC);
+    public Star clickTopLeft() {
+        int color = origin.getPairBack();
+        outside.setPairTopLeft(origin.getPairFront());
+        origin.setPairFront(circle.getPairBottomRight());
+        circle.setPairBottomRight(color);
 
-        aPPC = circle.getFaceTop().getPPC(ppc);
-        circle.setFaceTop(ppc, outside.getFaceTopRight().getPPC(ppc));
-        outside.setFaceTopRight(ppc, aPPC);
+        color = circle.getPairTop();
+        circle.setPairTop(outside.getPairTopRight());
+        outside.setPairTopRight(color);
 
-        aPPC = outside.getFaceBottom().getPPC(ppc);
-        outside.setFaceBottom(ppc, circle.getFaceBottomLeft().getPPC(ppc));
-        circle.setFaceBottomLeft(ppc, aPPC);
-
-        print();
+        color = outside.getPairBottom();
+        outside.setPairBottom(circle.getPairBottomLeft());
+        circle.setPairBottomLeft(color);
+        
         return new AntiMercedes(this);
     }
     @Override
-    public Star clickTopRight(PipesPlusColumn ppc) {
-        boolean[] aPPC = origin.getFaceBack().getPPC(ppc);
-        origin.setFaceBack(ppc, outside.getFaceTopRight().getPPC(ppc));
-        outside.setFaceTopRight(ppc, origin.getFaceFront().getPPC(ppc));
-        origin.setFaceFront(ppc, circle.getFaceBottomLeft().getPPC(ppc));
-        circle.setFaceBottomLeft(ppc, aPPC);
+    public Star clickTopRight() {
+        int color = origin.getPairBack();
+        outside.setPairTopRight(origin.getPairFront());
+        origin.setPairFront(circle.getPairBottomLeft());
+        circle.setPairBottomLeft(color);
 
-        aPPC = circle.getFaceTop().getPPC(ppc);
-        circle.setFaceTop(ppc, outside.getFaceTopLeft().getPPC(ppc));
-        outside.setFaceTopLeft(ppc, aPPC);
+        color = circle.getPairTop();
+        circle.setPairTop(outside.getPairTopLeft());
+        outside.setPairTopLeft(color);
 
-        aPPC = outside.getFaceBottom().getPPC(ppc);
-        outside.setFaceBottom(ppc, circle.getFaceBottomRight().getPPC(ppc));
-        circle.setFaceBottomRight(ppc, aPPC);
-
-        print();
+        color = outside.getPairBottom();
+        outside.setPairBottom(circle.getPairBottomRight());
+        circle.setPairBottomRight(color);
+        
         return new AntiMercedes(this);
     }
     @Override
-    public Star clickBottom(PipesPlusColumn ppc) {
-        boolean[] aPPC = origin.getFaceBack().getPPC(ppc);
-        origin.setFaceBack(ppc, outside.getFaceBottom().getPPC(ppc));
-        outside.setFaceBottom(ppc, origin.getFaceFront().getPPC(ppc));
-        origin.setFaceFront(ppc, circle.getFaceTop().getPPC(ppc));
-        circle.setFaceTop(ppc, aPPC);
+    public Star clickBottom() {
+        int color = origin.getPairBack();
+        outside.setPairBottom(origin.getPairFront());
+        origin.setPairFront(circle.getPairTop());
+        circle.setPairTop(color);
 
-        aPPC = circle.getFaceBottomLeft().getPPC(ppc);
-        circle.setFaceBottomLeft(ppc, outside.getFaceTopLeft().getPPC(ppc));
-        outside.setFaceTopLeft(ppc, aPPC);
+        color = circle.getPairBottomLeft();
+        circle.setPairBottomLeft(outside.getPairTopLeft());
+        outside.setPairTopLeft(color);
 
-        aPPC = circle.getFaceBottomRight().getPPC(ppc);
-        circle.setFaceBottomRight(ppc, outside.getFaceTopRight().getPPC(ppc));
-        outside.setFaceTopRight(ppc, aPPC);
-
-        print();
+        color = circle.getPairBottomRight();
+        circle.setPairBottomRight(outside.getPairTopRight());
+        outside.setPairTopRight(color);
+        
         return new AntiMercedes(this);
     }
 

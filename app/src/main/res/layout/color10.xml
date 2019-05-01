@@ -12,21 +12,21 @@
             android:id="@+id/imageView10_1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/cyan"
+            android:background="@color/blue"
             android:layout_weight="1" />
 
         <ImageView
             android:id="@+id/imageView10_2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/cyan"
+            android:background="@color/blue"
             android:layout_weight="1"/>
 
         <ImageView
             android:id="@+id/imageView10_3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/cyan"
+            android:background="@color/blue"
             android:layout_weight="1" />
     </TableRow>
 
@@ -39,21 +39,21 @@
             android:id="@+id/imageView10_4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/magenta"
+            android:background="@color/blue"
             android:layout_weight="1" />
 
         <ImageView
             android:id="@+id/imageView10_5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/magenta"
+            android:background="@color/blue"
             android:layout_weight="1" />
 
         <ImageView
             android:id="@+id/imageView10_6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/magenta"
+            android:background="@color/blue"
             android:layout_weight="1" />
     </TableRow>
 

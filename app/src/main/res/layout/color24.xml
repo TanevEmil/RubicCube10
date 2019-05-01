@@ -12,21 +12,21 @@
             android:id="@+id/imageView24_1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/red"
+            android:background="@color/magenta"
             android:layout_weight="1" />
 
         <ImageView
             android:id="@+id/imageView24_2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/red"
+            android:background="@color/magenta"
             android:layout_weight="1"/>
 
         <ImageView
             android:id="@+id/imageView24_3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/red"
+            android:background="@color/magenta"
             android:layout_weight="1" />
     </TableRow>
 
@@ -66,21 +66,21 @@
             android:id="@+id/imageView24_7"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/blue"
+            android:background="@color/magenta"
             android:layout_weight="1" />
 
         <ImageView
             android:id="@+id/imageView24_8"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/blue"
+            android:background="@color/magenta"
             android:layout_weight="1"/>
 
         <ImageView
             android:id="@+id/imageView24_9"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/blue"
+            android:background="@color/magenta"
             android:layout_weight="1"/>
     </TableRow>
 </TableLayout>

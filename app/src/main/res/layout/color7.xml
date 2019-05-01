@@ -12,21 +12,21 @@
             android:id="@+id/imageView7_1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/red"
+            android:background="@color/black"
             android:layout_weight="1" />
 
         <ImageView
             android:id="@+id/imageView7_2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/red"
+            android:background="@color/black"
             android:layout_weight="1"/>
 
         <ImageView
             android:id="@+id/imageView7_3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/red"
+            android:background="@color/black"
             android:layout_weight="1" />
     </TableRow>
 
@@ -39,21 +39,21 @@
             android:id="@+id/imageView7_4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/green"
+            android:background="@color/black"
             android:layout_weight="1" />
 
         <ImageView
             android:id="@+id/imageView7_5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/green"
+            android:background="@color/black"
             android:layout_weight="1" />
 
         <ImageView
             android:id="@+id/imageView7_6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/green"
+            android:background="@color/black"
             android:layout_weight="1" />
     </TableRow>
 
@@ -66,21 +66,21 @@
             android:id="@+id/imageView7_7"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/blue"
+            android:background="@color/black"
             android:layout_weight="1" />
 
         <ImageView
             android:id="@+id/imageView7_8"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/blue"
+            android:background="@color/black"
             android:layout_weight="1"/>
 
         <ImageView
             android:id="@+id/imageView7_9"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/blue"
+            android:background="@color/black"
             android:layout_weight="1"/>
     </TableRow>
 </TableLayout>
