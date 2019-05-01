@@ -25,5 +25,5 @@
     <color name="c_red">#FF0000</color>
     <color name="c_green">#00FF00</color>
     <color name="c_blue">#0000FF</color>
-
+    <color name="c_white">#FFFFFF</color>
 </resources>

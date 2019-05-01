@@ -14,7 +14,6 @@
             android:layout_height="match_parent"
             android:text="@string/rgb001"
             android:textColor="@color/t_yellow"
-            android:textAlignment="center"
             android:layout_weight="1"
             android:gravity="center" />
 
@@ -22,9 +21,8 @@
             android:id="@+id/textView10_2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/cmy000"
+            android:text="@string/rgb000"
             android:textColor="@color/t_yellow"
-            android:textAlignment="center"
             android:layout_weight="1"
             android:gravity="center" />
 
@@ -34,7 +32,6 @@
             android:layout_height="match_parent"
             android:text="@string/cmy000"
             android:textColor="@color/t_yellow"
-            android:textAlignment="center"
             android:layout_weight="1"
             android:gravity="center" />
     </TableRow>
@@ -48,9 +45,8 @@
             android:id="@+id/textView10_4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/rgb000"
+            android:text="@string/cmy000"
             android:textColor="@color/t_yellow"
-            android:textAlignment="center"
             android:layout_weight="1"
             android:gravity="center" />
 
@@ -58,9 +54,8 @@
             android:id="@+id/textView10_5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/cmy000"
+            android:text="@string/rgb000"
             android:textColor="@color/t_yellow"
-            android:textAlignment="center"
             android:layout_weight="1"
             android:gravity="center" />
 
@@ -68,9 +63,8 @@
             android:id="@+id/textView10_6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/cmy000"
+            android:text="@string/rgb000"
             android:textColor="@color/t_yellow"
-            android:textAlignment="center"
             android:layout_weight="1"
             android:gravity="center" />
     </TableRow>
@@ -86,7 +80,6 @@
             android:layout_height="match_parent"
             android:text="@string/cmy000"
             android:textColor="@color/t_yellow"
-            android:textAlignment="center"
             android:layout_weight="1"
             android:gravity="center" />
 
@@ -96,7 +89,6 @@
             android:layout_height="match_parent"
             android:text="@string/rgb000"
             android:textColor="@color/t_yellow"
-            android:textAlignment="center"
             android:layout_weight="1"
             android:gravity="center"/>
 
@@ -106,7 +98,6 @@
             android:layout_height="match_parent"
             android:text="@string/rgb000"
             android:textColor="@color/t_yellow"
-            android:textAlignment="center"
             android:gravity="center"
             android:layout_weight="1"/>
     </TableRow>

@@ -8,7 +8,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:layout_weight="1">
+    android:layout_weight="1"
+    android:baselineAligned="false">
 
     <include
         layout="@layout/layout22"
@@ -60,7 +61,8 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="4"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:baselineAligned="false">
 
         <include
             layout="@layout/layout12"
@@ -101,7 +103,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:layout_weight="1">
+    android:layout_weight="1"
+    android:baselineAligned="false">
 
     <include
         layout="@layout/layout10"
@@ -154,7 +157,8 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="4"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:baselineAligned="false">
 
         <include
             layout="@layout/layout8"
@@ -195,7 +199,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_weight="1"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:baselineAligned="false">
 
 
     <include
@@ -215,7 +220,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1" />
-    />
+
 </LinearLayout>
 
 </LinearLayout>
