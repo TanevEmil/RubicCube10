@@ -9,15 +9,15 @@ public class AmFront{
     }
     public void clickFront() {
 
-        paker.getDtoPm().getAmRed().getTv().setText("");
-        paker.getDtoPm().getOddRed().getTv().setText("");
-        paker.getDtoPm().getPmRed().getTv().setText("");
-        paker.getDtoPm().getAmGreen().getTv().setText("");
-        paker.getDtoPm().getOddGreen().getTv().setText("");
-        paker.getDtoPm().getPmGreen().getTv().setText("");
-        paker.getDtoPm().getAmBlue().getTv().setText("");
-        paker.getDtoPm().getOddBlue().getTv().setText("");
-        paker.getDtoPm().getPmBlue().getTv().setText("+");
+//        paker.getDtoPm().getAmRed().getTv().setText("");
+//        paker.getDtoPm().getOddRed().getTv().setText("");
+//        paker.getDtoPm().getPmRed().getTv().setText("+");
+//        paker.getDtoPm().getAmGreen().getTv().setText("");
+//        paker.getDtoPm().getOddGreen().getTv().setText("");
+//        paker.getDtoPm().getPmGreen().getTv().setText("+");
+//        paker.getDtoPm().getAmBlue().getTv().setText("");
+//        paker.getDtoPm().getOddBlue().getTv().setText("");
+//        paker.getDtoPm().getPmBlue().getTv().setText("+");
 
         paker.getDto24().getAmRed().getTv().setText("");
         paker.getDto24().getOddRed().getTv().setText("");
@@ -79,15 +79,15 @@ public class AmFront{
         paker.getDto14().getOddBlue().getTv().setText("");
         paker.getDto14().getPmBlue().getTv().setText("+");
 
-        paker.getDtoOdd().getAmRed().getTv().setText("");
-        paker.getDtoOdd().getOddRed().getTv().setText("");
-        paker.getDtoOdd().getPmRed().getTv().setText("");
-        paker.getDtoOdd().getAmGreen().getTv().setText("");
-        paker.getDtoOdd().getOddGreen().getTv().setText("");
-        paker.getDtoOdd().getPmGreen().getTv().setText("+");
-        paker.getDtoOdd().getAmBlue().getTv().setText("");
-        paker.getDtoOdd().getOddBlue().getTv().setText("");
-        paker.getDtoOdd().getPmBlue().getTv().setText("");
+//        paker.getDtoOdd().getAmRed().getTv().setText("");
+//        paker.getDtoOdd().getOddRed().getTv().setText("");
+//        paker.getDtoOdd().getPmRed().getTv().setText("+");
+//        paker.getDtoOdd().getAmGreen().getTv().setText("");
+//        paker.getDtoOdd().getOddGreen().getTv().setText("");
+//        paker.getDtoOdd().getPmGreen().getTv().setText("+");
+//        paker.getDtoOdd().getAmBlue().getTv().setText("");
+//        paker.getDtoOdd().getOddBlue().getTv().setText("");
+//        paker.getDtoOdd().getPmBlue().getTv().setText("+");
 
         paker.getDto1().getAmRed().getTv().setText("");
         paker.getDto1().getOddRed().getTv().setText("");
@@ -150,15 +150,15 @@ public class AmFront{
         paker.getDto11().getPmBlue().getTv().setText("");
 
 
-        paker.getDtoAm().getAmRed().getTv().setText("");
-        paker.getDtoAm().getOddRed().getTv().setText("");
-        paker.getDtoAm().getPmRed().getTv().setText("+");
-        paker.getDtoAm().getAmGreen().getTv().setText("");
-        paker.getDtoAm().getOddGreen().getTv().setText("");
-        paker.getDtoAm().getPmGreen().getTv().setText("");
-        paker.getDtoAm().getAmBlue().getTv().setText("");
-        paker.getDtoAm().getOddBlue().getTv().setText("");
-        paker.getDtoAm().getPmBlue().getTv().setText("");
+//        paker.getDtoAm().getAmRed().getTv().setText("");
+//        paker.getDtoAm().getOddRed().getTv().setText("");
+//        paker.getDtoAm().getPmRed().getTv().setText("+");
+//        paker.getDtoAm().getAmGreen().getTv().setText("");
+//        paker.getDtoAm().getOddGreen().getTv().setText("");
+//        paker.getDtoAm().getPmGreen().getTv().setText("+");
+//        paker.getDtoAm().getAmBlue().getTv().setText("");
+//        paker.getDtoAm().getOddBlue().getTv().setText("");
+//        paker.getDtoAm().getPmBlue().getTv().setText("+");
 
         paker.getDto12().getAmRed().getTv().setText("");
         paker.getDto12().getOddRed().getTv().setText("");
