@@ -50,7 +50,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="@string/cmy000"
+            android:text="@string/cmy001"
             android:textColor="@color/t_yellow" />
 
         <TextView
@@ -59,7 +59,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="@string/rgb001"
+            android:text="@string/rgb000"
             android:textColor="@color/t_yellow" />
 
         <TextView
