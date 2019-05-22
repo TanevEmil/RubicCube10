@@ -1,36 +1,43 @@
 package com.example.rubiccube10;
 
-
+import android.hardware.SensorListener;
+import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.rubiccube10.cubes.Am;
 import com.example.rubiccube10.cubes.Odd;
 import com.example.rubiccube10.cubes.Pm;
-import com.example.rubiccube10.cubes.am.AmBlue;
-import com.example.rubiccube10.cubes.am.AmGreen;
-import com.example.rubiccube10.cubes.am.AmRed;
-import com.example.rubiccube10.cubes.odd.OddBlue;
-import com.example.rubiccube10.cubes.odd.OddGreen;
-import com.example.rubiccube10.cubes.odd.OddRed;
-import com.example.rubiccube10.cubes.pm.PmBlue;
-import com.example.rubiccube10.cubes.pm.PmGreen;
-import com.example.rubiccube10.cubes.pm.PmRed;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.Random;
+
+public class MainActivity extends AppCompatActivity implements SensorListener {
     private Column column;
+    private static final int SHAKE_THRESHOLD = 5000;
+    private float last_x, last_y, last_z;
+    private long lastUpdate;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        SensorManager sensorMgr = (SensorManager) getSystemService(SENSOR_SERVICE);
+        sensorMgr.registerListener(this,
+                SensorManager.SENSOR_ACCELEROMETER,
+                SensorManager.SENSOR_DELAY_GAME);
+
         final Paker paker = new Paker(this);
 
         final Pm pm = new Pm(paker);
         final Odd odd = new Odd(paker);
         final Am am = new Am(paker);
         column = odd.clickFront();
+
+        Toast.makeText(this,
+                "Shake hard to shuffle ;-)", Toast.LENGTH_LONG).show();
 
         final Button button14 = findViewById(R.id.button14);
         button14.setOnClickListener(new View.OnClickListener() {
@@ -161,5 +168,168 @@ public class MainActivity extends AppCompatActivity {
                 column = pm.clickFront();
             }
         });
+    }
+
+    @Override
+    public void onAccuracyChanged(int sensor, int accuracy) {
+
+    }
+
+    public void onSensorChanged(int sensor, float[] values) {
+        if (sensor == SensorManager.SENSOR_ACCELEROMETER) {
+            long curTime = System.currentTimeMillis();
+            // only allow one update every 100ms.
+            if ((curTime - lastUpdate) > 100) {
+                long diffTime = (curTime - lastUpdate);
+                lastUpdate = curTime;
+
+                float x = values[SensorManager.DATA_X];
+                float y = values[SensorManager.DATA_Y];
+                float z = values[SensorManager.DATA_Z];
+
+                float speed = Math.abs(x+y+z - last_x - last_y - last_z) / diffTime * 10000;
+
+                if (speed > SHAKE_THRESHOLD) {
+//                    Log.d("sensor", "shake detected w/ speed: " + speed);
+//                    Toast.makeText(this, "shake detected w/ speed: " + speed, Toast.LENGTH_SHORT).show();
+
+                    final Paker paker = new Paker(this);
+
+                    final Pm pm = new Pm(paker);
+                    final Odd odd = new Odd(paker);
+                    final Am am = new Am(paker);
+
+                    column = odd.clickFront();
+
+                    Random r = new Random();
+
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        pm.clickTopRight(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        pm.clickBottomRight(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        pm.clickBottom(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        pm.clickBottomLeft(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        pm.clickTopLeft(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        pm.clickTop(column);
+
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        odd.clickTopRight(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        odd.clickBottomRight(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        odd.clickBottom(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        odd.clickBottomLeft(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        odd.clickTopLeft(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        odd.clickTop(column);
+
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        am.clickTopRight(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        am.clickBottomRight(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        am.clickBottom(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        am.clickBottomLeft(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        am.clickTopLeft(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        am.clickTop(column);
+
+                    column = am.clickFront();
+
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        pm.clickTopRight(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        pm.clickBottomRight(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        pm.clickBottom(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        pm.clickBottomLeft(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        pm.clickTopLeft(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        pm.clickTop(column);
+
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        odd.clickTopRight(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        odd.clickBottomRight(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        odd.clickBottom(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        odd.clickBottomLeft(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        odd.clickTopLeft(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        odd.clickTop(column);
+
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        am.clickTopRight(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        am.clickBottomRight(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        am.clickBottom(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        am.clickBottomLeft(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        am.clickTopLeft(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        am.clickTop(column);
+
+                    column = pm.clickFront();
+
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        pm.clickTopRight(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        pm.clickBottomRight(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        pm.clickBottom(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        pm.clickBottomLeft(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        pm.clickTopLeft(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        pm.clickTop(column);
+
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        odd.clickTopRight(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        odd.clickBottomRight(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        odd.clickBottom(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        odd.clickBottomLeft(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        odd.clickTopLeft(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        odd.clickTop(column);
+
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        am.clickTopRight(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        am.clickBottomRight(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        am.clickBottom(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        am.clickBottomLeft(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        am.clickTopLeft(column);
+                    for(int i = 0; i < r.nextInt(5); i++)
+                        am.clickTop(column);
+
+                    column = odd.clickFront();
+                }
+                last_x = x;
+                last_y = y;
+                last_z = z;
+            }
+        }
     }
 }
